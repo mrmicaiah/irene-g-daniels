@@ -1,0 +1,29 @@
+{
+  "name": "Irene Grace Daniels",
+  "shortName": "Irene D.",
+  "tagline": "Faith without the filter. Life without the pretense.",
+  "url": "https://www.irenegdaniels.com",
+  "email": "momsoffthehook@untitledpublishers.com",
+  "description": "Author of faith-based books for women who are running on empty but still showing up.",
+  "colors": {
+    "foundation": "#5D4E37",
+    "primary": "#A68B8B",
+    "secondary": "#7D8E7A",
+    "accent": "#C9A284",
+    "background": "#FBF8F6",
+    "text": "#3D3225"
+  },
+  "social": {
+    "blogs": [
+      {
+        "name": "The Hot Mess",
+        "url": "https://the-hot-mess.untitledpublishers.com"
+      },
+      {
+        "name": "Systems Under Siege",
+        "url": "https://systems-under-siege.untitledpublishers.com"
+      }
+    ]
+  },
+  "currentYear": 2026
+}
