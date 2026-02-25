@@ -1,0 +1,39 @@
+---
+layout: base.njk
+---
+
+<article>
+  <header class="post-header">
+    <div class="container">
+      <h1>{{ title }}</h1>
+      <p class="post-meta">{{ date | dateFormat }} · By Irene D.</p>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    {{ content | safe }}
+    
+    <hr style="border: none; border-top: 1px solid #E5E0DB; margin: var(--space-lg) 0;">
+    
+    <p style="text-align: center; font-style: italic; color: var(--primary);">
+      Thanks for reading. If this encouraged you, I'd love for you to share it with a friend who needs it too.
+    </p>
+    
+    <p style="text-align: center; margin-top: var(--space-md);">
+      <em>— Irene D.</em>
+    </p>
+  </div>
+</article>
+
+<!-- Newsletter CTA -->
+<section class="newsletter-section">
+  <div class="container">
+    <h2>Want More Like This?</h2>
+    <p>Get encouragement delivered to your inbox.</p>
+    <form class="newsletter-form" action="https://connect.untitledpublishers.com/subscribe" method="POST">
+      <input type="hidden" name="list" value="irene-daniels">
+      <input type="email" name="email" placeholder="Your email address" required>
+      <button type="submit" class="btn btn-accent">Subscribe</button>
+    </form>
+  </div>
+</section>
