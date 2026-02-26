@@ -18,12 +18,12 @@ description: Thoughts on faith, motherhood, and showing up imperfectly — by Ir
       <ul class="posts-list">
         {% for post in collections.posts %}
           <li class="post-card">
-            <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
             <p class="post-meta">{{ post.date | dateFormat }}</p>
             {% if post.data.excerpt %}
               <p class="post-excerpt">{{ post.data.excerpt }}</p>
             {% endif %}
-            <a href="{{ post.url }}" class="btn btn-secondary">Read More</a>
+            <a href="{{ post.url | url }}" class="btn btn-secondary">Read More</a>
           </li>
         {% endfor %}
       </ul>
