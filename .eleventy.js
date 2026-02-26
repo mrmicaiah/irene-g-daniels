@@ -19,6 +19,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/irene-g-daniels/",
     dir: {
       input: "src",
       output: "_site",
