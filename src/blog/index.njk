@@ -52,8 +52,9 @@ description: Thoughts on faith, motherhood, and showing up imperfectly — by Ir
   <div class="container">
     <h2>Don't Miss a Post</h2>
     <p>Get new blog posts and updates delivered straight to your inbox.</p>
-    <form class="newsletter-form" action="https://connect.untitledpublishers.com/subscribe" method="POST">
-      <input type="hidden" name="list" value="irene-daniels">
+    <form class="newsletter-form" action="https://email-bot-server.micaiah-tasks.workers.dev/api/subscribe" method="POST">
+      <input type="hidden" name="list_id" value="irene-daniels">
+      <input type="hidden" name="source" value="blog-page">
       <input type="email" name="email" placeholder="Your email address" required>
       <button type="submit" class="btn btn-accent">Subscribe</button>
     </form>
