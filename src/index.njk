@@ -96,8 +96,9 @@ description: Irene Grace Daniels - Author of faith-based books for women who are
   <div class="container">
     <h2>Stay Connected</h2>
     <p>Get encouragement, book updates, and behind-the-scenes peeks delivered to your inbox.</p>
-    <form class="newsletter-form" action="https://connect.untitledpublishers.com/subscribe" method="POST">
-      <input type="hidden" name="list" value="irene-daniels">
+    <form class="newsletter-form" action="https://email-bot-server.micaiah-tasks.workers.dev/api/subscribe" method="POST">
+      <input type="hidden" name="list_id" value="irene-daniels">
+      <input type="hidden" name="source" value="website-footer">
       <input type="email" name="email" placeholder="Your email address" required>
       <button type="submit" class="btn btn-accent">Subscribe</button>
     </form>
