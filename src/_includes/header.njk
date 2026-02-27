@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container">
-    <a href="{{ '/' | url }}" class="logo">
+    <a href="/" class="logo">
       <span class="logo-name">Irene Grace Daniels</span>
     </a>
     
@@ -10,11 +10,11 @@
     
     <nav class="main-nav" role="navigation">
       <ul class="nav-list">
-        <li><a href="{{ '/' | url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-        <li><a href="{{ '/about/' | url }}" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></li>
-        <li><a href="{{ '/books/' | url }}" {% if page.url == "/books/" %}class="active"{% endif %}>Books</a></li>
-        <li><a href="{{ '/blog/' | url }}" {% if "/blog/" in page.url %}class="active"{% endif %}>Blog</a></li>
-        <li><a href="{{ '/connect/' | url }}" {% if page.url == "/connect/" %}class="active"{% endif %}>Connect</a></li>
+        <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+        <li><a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></li>
+        <li><a href="/books/" {% if page.url == "/books/" %}class="active"{% endif %}>Books</a></li>
+        <li><a href="/blog/" {% if "/blog/" in page.url %}class="active"{% endif %}>Blog</a></li>
+        <li><a href="/connect/" {% if page.url == "/connect/" %}class="active"{% endif %}>Connect</a></li>
       </ul>
     </nav>
   </div>
