@@ -18,8 +18,9 @@ description: Get in touch with Irene Grace Daniels. Subscribe to the newsletter 
     <div style="text-align: center; margin-bottom: var(--space-xl);">
       <h2>Stay in the Loop</h2>
       <p>Get encouragement, book updates, and behind-the-scenes peeks delivered to your inbox. No spam, just real talk.</p>
-      <form class="newsletter-form" action="https://connect.untitledpublishers.com/subscribe" method="POST" style="margin-top: var(--space-md);">
-        <input type="hidden" name="list" value="irene-daniels">
+      <form class="newsletter-form" action="https://email-bot-server.micaiah-tasks.workers.dev/api/subscribe" method="POST" style="margin-top: var(--space-md);">
+        <input type="hidden" name="list_id" value="irene-daniels">
+        <input type="hidden" name="source" value="connect-page">
         <input type="email" name="email" placeholder="Your email address" required>
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
