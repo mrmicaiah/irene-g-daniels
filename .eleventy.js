@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
   
   eleventyConfig.addFilter("dateFormat", function(date) {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -19,7 +20,6 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/irene-g-daniels/",
     dir: {
       input: "src",
       output: "_site",
