@@ -6,12 +6,12 @@
   "email": "momsoffthehook@untitledpublishers.com",
   "description": "Author of faith-based books for women who are running on empty but still showing up.",
   "colors": {
-    "foundation": "#5D4E37",
-    "primary": "#A68B8B",
-    "secondary": "#7D8E7A",
-    "accent": "#C9A284",
-    "background": "#FBF8F6",
-    "text": "#3D3225"
+    "foundation": "#5C6B54",
+    "primary": "#C27878",
+    "secondary": "#5C6B54",
+    "accent": "#C9A227",
+    "background": "#FAF8F5",
+    "text": "#3D3D3D"
   },
   "social": {
     "blogs": [
@@ -20,8 +20,12 @@
         "url": "https://the-hot-mess.untitledpublishers.com"
       },
       {
-        "name": "Systems Under Siege",
+        "name": "The Clean Enough House",
         "url": "https://systems-under-siege.untitledpublishers.com"
+      },
+      {
+        "name": "Irene D Creations",
+        "url": "https://www.etsy.com/shop/IreneDCreations"
       }
     ]
   },
