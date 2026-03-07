@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-schedule:
+  schedule:
     # Rebuild daily at 6:00 AM CST (12:00 UTC)
     - cron: '0 12 * * *'
 permissions:
