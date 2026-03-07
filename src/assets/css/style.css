@@ -91,29 +91,33 @@ p { margin: 0 0 var(--space-sm); }
 .footer-bottom p { margin: 0; font-size: 0.875rem; color: rgba(255, 255, 255, 0.6); }
 
 .hero { padding: var(--space-xl) 0; text-align: center; }
-.hero-home { padding: var(--space-lg) 0; background: linear-gradient(135deg, var(--background) 0%, #F5F0EB 100%); }
+.hero-home { padding: var(--space-md) 0 var(--space-lg); background: linear-gradient(135deg, var(--background) 0%, #F5F0EB 100%); }
 
-/* NEW: Clean two-column hero with book as star */
+/* Clean two-column hero with book as star */
 .hero-two-col {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-lg);
   align-items: center;
   justify-content: center;
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
 }
 .hero-two-col .hero-text-col {
-  flex: 1 1 400px;
+  flex: 1 1 350px;
   text-align: left;
-  min-width: 300px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-two-col .hero-tagline {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-style: italic;
   color: var(--primary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+  line-height: 1.3;
 }
 .hero-two-col .hero-description {
   font-size: 1.1rem;
@@ -268,10 +272,8 @@ p { margin: 0 0 var(--space-sm); }
     text-align: center;
     order: 2;
   }
-  .hero-two-col .hero-description {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  .hero-two-col .hero-tagline {
+    font-size: 1.6rem;
   }
   .hero-two-col .hero-buttons {
     justify-content: center;
