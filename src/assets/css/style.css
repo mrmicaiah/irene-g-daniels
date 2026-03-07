@@ -91,7 +91,12 @@ p { margin: 0 0 var(--space-sm); }
 .footer-bottom p { margin: 0; font-size: 0.875rem; color: rgba(255, 255, 255, 0.6); }
 
 .hero { padding: var(--space-xl) 0; text-align: center; }
-.hero-home { padding: var(--space-md) 0 var(--space-lg); background: linear-gradient(135deg, var(--background) 0%, #F5F0EB 100%); }
+.hero-home {
+  padding: var(--space-sm) 0 var(--space-lg);
+  background: linear-gradient(180deg, #F5F0EB 0%, var(--background) 100%);
+  border-bottom: 1px solid rgba(92, 107, 84, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
 
 /* Clean two-column hero with book as star */
 .hero-two-col {
@@ -107,6 +112,14 @@ p { margin: 0 0 var(--space-sm); }
   flex: 1 1 380px;
   text-align: left;
   min-width: 280px;
+}
+.hero-accent-line {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary);
+  margin-bottom: var(--space-sm);
+  border-radius: 2px;
 }
 .hero-two-col .hero-tagline {
   font-family: var(--font-heading);
@@ -270,6 +283,10 @@ p { margin: 0 0 var(--space-sm); }
   .hero-two-col .hero-text-col {
     text-align: center;
     order: 2;
+  }
+  .hero-accent-line {
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-two-col .hero-tagline {
     font-size: 1.6rem;
