@@ -95,15 +95,18 @@ p { margin: 0 0 var(--space-sm); }
 
 /* NEW: Clean two-column hero with book as star */
 .hero-two-col {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--space-lg);
   align-items: center;
+  justify-content: center;
   max-width: 900px;
   margin: 0 auto;
 }
 .hero-two-col .hero-text-col {
+  flex: 1 1 400px;
   text-align: left;
+  min-width: 300px;
 }
 .hero-two-col .hero-tagline {
   font-family: var(--font-heading);
@@ -124,13 +127,15 @@ p { margin: 0 0 var(--space-sm); }
   flex-wrap: wrap;
 }
 .hero-book-feature {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .hero-book-feature img {
-  width: 260px;
+  max-width: 240px;
+  width: 240px;
   height: auto;
   border-radius: 4px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
@@ -253,12 +258,11 @@ p { margin: 0 0 var(--space-sm); }
 .bg-rose { background-color: var(--deep-blush); }
 .border-rose { border-color: var(--deep-blush); }
 
-/* NEW: Two-column hero responsive */
-@media (max-width: 800px) {
+/* Two-column hero responsive */
+@media (max-width: 700px) {
   .hero-two-col {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
-    gap: var(--space-md);
   }
   .hero-two-col .hero-text-col {
     text-align: center;
@@ -276,9 +280,12 @@ p { margin: 0 0 var(--space-sm); }
     order: 1;
   }
   .hero-book-feature img {
+    max-width: 200px;
     width: 200px;
   }
-  
+}
+
+@media (max-width: 800px) {
   .hero-horizontal { grid-template-columns: 1fr; gap: var(--space-sm); text-align: center; }
   .hero-logo-col { order: 1; }
   .hero-logo-img { height: 180px; }
@@ -334,7 +341,7 @@ p { margin: 0 0 var(--space-sm); }
   .hero-logo-img { height: 140px; }
   .hero-book img { max-width: 150px; }
   .hero-book-col img { height: 140px; }
-  .hero-book-feature img { width: 180px; }
+  .hero-book-feature img { max-width: 180px; width: 180px; }
   .hero-two-col .hero-tagline { font-size: 1.25rem; }
   .logo-image { height: 45px; }
 }
