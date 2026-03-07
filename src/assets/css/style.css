@@ -57,6 +57,8 @@ p { margin: 0 0 var(--space-sm); }
 .btn-primary:hover { background-color: var(--text); color: var(--white); }
 .btn-secondary { background-color: transparent; color: var(--foundation); border: 2px solid var(--foundation); }
 .btn-secondary:hover { background-color: var(--foundation); color: var(--white); }
+.btn-rose-outline { background-color: transparent; color: var(--primary); border: 2px solid var(--primary); }
+.btn-rose-outline:hover { background-color: var(--primary); color: var(--white); }
 .btn-accent { background-color: var(--accent); color: var(--white); }
 .btn-accent:hover { background-color: var(--primary); }
 
@@ -218,7 +220,7 @@ p { margin: 0 0 var(--space-sm); }
 .section { padding: var(--space-xl) 0; }
 .section-alt { background-color: var(--white); }
 .section-header { text-align: center; margin-bottom: var(--space-lg); }
-.section-header h2 { margin-bottom: var(--space-xs); }
+.section-header h2 { margin-bottom: var(--space-xs); color: var(--primary); }
 .section-header p { font-size: 1.125rem; color: var(--soft-taupe); max-width: 600px; margin: 0 auto; }
 
 .book-feature { display: grid; grid-template-columns: 300px 1fr; gap: var(--space-lg); align-items: start; }
@@ -233,7 +235,7 @@ p { margin: 0 0 var(--space-sm); }
 .about-image img { border-radius: 8px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); }
 .about-image-small { max-width: 280px; }
 .about-image-small img { width: 100%; }
-.about-text h2 { margin-bottom: var(--space-sm); }
+.about-text h2 { margin-bottom: var(--space-sm); color: var(--primary); }
 .about-text p { margin-bottom: var(--space-md); }
 
 .about-full { display: grid; grid-template-columns: 350px 1fr; gap: var(--space-lg); align-items: start; }
@@ -245,7 +247,7 @@ p { margin: 0 0 var(--space-sm); }
 .blogs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
 .blog-card { background-color: var(--white); border-radius: 8px; padding: var(--space-md); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; text-decoration: none; display: block; border-left: 4px solid transparent; }
 .blog-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); border-left-color: var(--primary); }
-.blog-card h3 { margin-bottom: var(--space-xs); color: var(--foundation); }
+.blog-card h3 { margin-bottom: var(--space-xs); color: var(--primary); }
 .blog-card p { color: var(--soft-taupe); margin-bottom: var(--space-sm); }
 
 .newsletter-section { background-color: var(--primary); padding: var(--space-lg) 0; text-align: center; }
